@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
         Random rand = new Random();
-        int limit = 51;
+        int limit = 50;
         int randnum = rand.nextInt(limit);
         int userGuess = -randnum;
         Scanner myObj = new Scanner(System.in);
@@ -24,7 +24,7 @@ public class Main {
                 System.out.println("That number is too small guess again");
               //  userGuess = myObj.nextLine();
             }
-            else{
+            else if (userGuess == randnum){
                 System.out.println("Correct");
             }
             }
